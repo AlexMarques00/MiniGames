@@ -11,7 +11,7 @@ if awnser == 'n':
     quit()
 elif awnser == 'y':
     while x == 1:
-        print('How about a quiz? I\'ll ask you questions about anime and for each correct awnser you\'ll get a point. I\'ll tell you your points in the end or if you say \'bye\' in the middle of the game.')
+        print('How about a quiz? I\'ll ask you questions about anime and for each correct awnser you\'ll get a point. I\'ll tell you your points in the end.')
         print('Question 1: In Sword Art Online, what is Kirigaya Akihito\'s username?')
         awnser = input('Your awnser: ')
         while awnser.lower() != 'kirito':
