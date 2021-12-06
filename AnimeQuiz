@@ -12,11 +12,11 @@ if answer == 'n':
 elif answer == 'y':
     while x == 1:
         print('How about a quiz? I\'ll ask you questions about anime and for each correct answer you\'ll get a point. I\'ll tell you your points in the end.')
-        print('Question 1: In Sword Art Online, what is Kirigaya Akihito\'s username?')
+        print('Question 1: In Sword Art Online, what is Kirigaya Kazuto\'s username?')
         answer = input('Your answer: ')
         while answer.lower() != 'kirito':
             print('Wrong, try again.\nTip: Don\'t press space unless needed.')
-            print('Question 1: In Sword Art Online, what is Kirigaya Akihito\'s username? (1 word, 6 letters)')
+            print('Question 1: In Sword Art Online, what is Kirigaya Kazuto\'s username? (1 word, 6 letters)')
             answer = input('Your answer: ')
         else:
             print('Correct! Next question:')
