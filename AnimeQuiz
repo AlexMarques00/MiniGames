@@ -59,9 +59,9 @@ elif answer == 'y':
             points += 1
         print('Question 6: In Boku no Hero Academia, what is Deku\'s full name (last name, first name)?')
         answer = input('Your answer: ')
-        while answer.lower() != 'midorya izuku':
+        while answer.lower() != 'midoriya izuku':
             print('Wrong, try again.')
-            print('Question 6: In Boku no Hero Academia, what is Deku\'s full name (last name, first name)? (2 words, 7+5 letters)')
+            print('Question 6: In Boku no Hero Academia, what is Deku\'s full name (last name, first name)? (2 words, 8+5 letters)')
             answer = input('Your answer: ')
         else:
             print('Correct! Next question:')
