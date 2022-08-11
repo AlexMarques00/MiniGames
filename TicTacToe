@@ -8,7 +8,7 @@ def hey():
     if int(x) < 16 and int(x) >= 0:
         print("Oh, you're just a kid. Go play some game or whatever, I hate kids!")
     elif int(x) >= 16:
-        print("Cool! I was made by an 18 year old. His name is Alex Marques.")
+        print("Cool! I was made by a 19 year old. His name is Alex Marques.")
         print("Do you like games? (Yes or No)")
         x = input()
         if x.lower() == "no":
