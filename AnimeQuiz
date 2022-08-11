@@ -3,322 +3,560 @@
 name = input('Your name: ')
 print(f'Hello, {name}.')
 answer = input('Do you want to play a game? (\'y\' or \'n\'): ')
-points = 0
-extra = 0
-x = 1
 if answer == 'n':
     print(f'Goodbye, {name}.')
     quit()
 elif answer == 'y':
-    while x == 1:
-        print('How about a quiz? I\'ll ask you questions about anime and for each correct answer you\'ll get a point. I\'ll tell you your points in the end.')
-        print('Question 1: In Sword Art Online, what is Kirigaya Kazuto\'s username?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'kirito':
-            print('Wrong, try again.\nTip: Don\'t press space unless needed.')
-            print('Question 1: In Sword Art Online, what is Kirigaya Kazuto\'s username? (1 word, 6 letters)')
+    print('How about a quiz? I\'ll ask you questions about anime and for each correct answer you\'ll get a point. I\'ll tell you your points in the end.')
+    def play():
+        x = 1
+        points = 0
+        extra = 0
+        while x == 1:
+            print("If you want to quit midgame, type 'gameover', if you want to skip the question, type 'skip'.")
+            print("If you want to change your name, type 'name()'.")
+            print('Question 1: In Sword Art Online, what is Kirigaya Kazuto\'s username?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'kirito' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.\nTip: Don\'t press space unless needed.')
+                    print('Question 1: In Sword Art Online, what is Kirigaya Kazuto\'s username? (1 word, 6 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 2: In Naruto, what is Naruto\'s village\'s name?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'konoha':
-            print('Wrong, try again.')
-            print('Question 2: In Naruto, what is Naruto\'s village\'s name? (1 word, 6 letters)')
+            print('Question 2: In Naruto, what is Naruto\'s village\'s name?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'konoha' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 2: In Naruto, what is Naruto\'s village\'s name? (1 word, 6 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 3: In Sword Art Online, what is Kirigaya Kazuto\'s girlfriend\'s full name (last name, first name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'yuuki asuna':
-            print('Wrong, try again.')
-            print('Question 3: Question 3: In Sword Art Online, what is Kirigaya Kazuto\'s girlfriend\'s full name (last name, first name)? (2 words, 5+5 letters)')
+            print('Question 3: In Sword Art Online, what is Kirigaya Kazuto\'s girlfriend\'s full name (last name, first name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'yuuki asuna' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 3: Question 3: In Sword Art Online, what is Kirigaya Kazuto\'s girlfriend\'s full name (last name, first name)? (2 words, 5+5 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 4: In Pokemon, what is Ash\'s first pokemon?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'pikachu':
-            print('Wrong, try again.')
-            print('Question 4: In Pokemon, what is Ash\'s first pokemon? (1 word, 6 letters)')
+            print('Question 4: In Pokemon, what is Ash\'s first pokemon?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'pikachu' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 4: In Pokemon, what is Ash\'s first pokemon? (1 word, 6 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 5: In Kimetsu no Yaiba (Demon Slayer), what is the first breathing technique\'s element that Kamado Tanjirou learns?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'water':
-            print('Wrong, try again.')
-            print('Question 5: In Kimetsu no Yaiba (Demon Slayer), what is the first breathing technique\'s element that Kamado Tanjirou learns? (1 word, 5 letters)')
+            print('Question 5: In Kimetsu no Yaiba (Demon Slayer), what is the first breathing technique\'s element that Kamado Tanjirou learns?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'water' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 5: In Kimetsu no Yaiba (Demon Slayer), what is the first breathing technique\'s element that Kamado Tanjirou learns? (1 word, 5 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 6: In Boku no Hero Academia, what is Deku\'s full name (last name, first name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'midoriya izuku':
-            print('Wrong, try again.')
-            print('Question 6: In Boku no Hero Academia, what is Deku\'s full name (last name, first name)? (2 words, 8+5 letters)')
+            print('Question 6: In Boku no Hero Academia, what is Deku\'s full name (last name, first name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'midoriya izuku' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 6: In Boku no Hero Academia, what is Deku\'s full name (last name, first name)? (2 words, 8+5 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 7: In Sword Art Online, in what year does the first arc happen?')
-        answer = input('Your answer: ')
-        while answer != '2022':
-            print('Wrong, try again.')
-            print('Question 7: In Sword Art Online, in what year does the first arc happen? (4 digits)')
+            print('Question 7: In Sword Art Online, in what year does the first arc happen?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer != '2022' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 7: In Sword Art Online, in what year does the first arc happen? (4 digits)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 8: In Naruto, who is the sixth hokage (last name, first name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'hatake kakashi':
-            print('Wrong, try again.')
-            print('Question 8: In Naruto, who is the sixth hokage (last name, first name)? (2 words, 6+7 letters)')
+            print('Question 8: In Naruto, who is the sixth hokage (last name, first name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'hatake kakashi' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 8: In Naruto, who is the sixth hokage (last name, first name)? (2 words, 6+7 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 9: In Shokugeki no Souma (Food Wars), what is the main character\'s full name (last name, first name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'yukihira souma':
-            print('Wrong, try again.')
-            print('Question 9: In Shokugeki no Souma (Food Wars), what is the main character\'s full name (last name, first name)? (2 words, 8+5 letters)')
+            print('Question 9: In Shokugeki no Souma (Food Wars), what is the main character\'s full name (last name, first name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'yukihira souma' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 9: In Shokugeki no Souma (Food Wars), what is the main character\'s full name (last name, first name)? (2 words, 8+5 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 10: In Ao no Exorcist (Blue Exorcist), what is the demon kid\'s full name (last name, first name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'okumura rin':
-            print('Wrong, try again.')
-            print('Question 10: In Ao no Exorcist (Blue Exorcist), what is the demon kid\'s full name (last name, first name)? (2 words, 7+3 letters)')
+            print('Question 10: In Ao no Exorcist (Blue Exorcist), what is the demon kid\'s full name (last name, first name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'okumura rin' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 10: In Ao no Exorcist (Blue Exorcist), what is the demon kid\'s full name (last name, first name)? (2 words, 7+3 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 11: In The Irregular at Magic High School, what is the name of the famous CAD inventor?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'taurus silver':
-            print('Wrong, try again.')
-            print('Question 11: In The Irregular at Magic High School, what is the name of the famous CAD inventor? (2 word, 6+6 letters)')
+            print('Question 11: In The Irregular at Magic High School, what is the name of the famous CAD inventor?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'taurus silver' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 11: In The Irregular at Magic High School, what is the name of the famous CAD inventor? (2 word, 6+6 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 12: In Naruto, what is the name of the Uchiha\'s eye jutsu after the person kills their closest friend?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'mangekyou sharingan':
-            print('Wrong, try again.')
-            print('Question 12: In Naruto, what is the name of the Uchiha\'s eye jutsu after the person kills their closest friend? (2 words, 9+9 letters)')
+            print('Question 12: In Naruto, what is the name of the Uchiha\'s eye jutsu after the person kills their closest friend?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'mangekyou sharingan' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 12: In Naruto, what is the name of the Uchiha\'s eye jutsu after the person kills their closest friend? (2 words, 9+9 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 13: In Boku no Hero Academia, what is Bakugou\'s first try for a hero name?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'king explosion murder' and answer.lower() != 'king explosion murderer':
-            print('Wrong, try again.')
-            print('Question 13: In Boku no Hero Academia, what is Bakugou\'s first try for a hero name? (3 words, 4+9+6 letters)')
+            print('Question 13: In Boku no Hero Academia, what is Bakugou\'s first try for a hero name?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'king explosion murder' and answer.lower() != 'king explosion murderer' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 13: In Boku no Hero Academia, what is Bakugou\'s first try for a hero name? (3 words, 4+9+6 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 14: In Shokugeki no Souma (Food Wars), what was Souma\'s father\'s full name before he got married (last name, first name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'saiba jouichirou':
-            print('Wrong, try again.')
-            print('Question 14: In Shokugeki no Souma (Food Wars), what was Souma\'s father\'s full name before he got married (last name, first name)? (2 words, 5+10 letters)')
+            print('Question 14: In Shokugeki no Souma (Food Wars), what was Souma\'s father\'s full name before he got married (last name, first name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'saiba jouichirou' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 14: In Shokugeki no Souma (Food Wars), what was Souma\'s father\'s full name before he got married (last name, first name)? (2 words, 5+10 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 15: In Death Note, what is the name of the Shinigami that follows Yagami Light around?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'ryuk':
-            print('Wrong, try again.')
-            print('Question 15: In Death Note, what is the name of the Shinigami that follows Yagami Light around? (1 word, 4 letters)')
+            print('Question 15: In Death Note, what is the name of the Shinigami that follows Yagami Light around?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'ryuk' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 15: In Death Note, what is the name of the Shinigami that follows Yagami Light around? (1 word, 4 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 16: In Kaguya-sama: Love is War, what is the full name of the boy (last name, first name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'shirogane miyuki':
-            print('Wrong, try again.')
-            print('Question 16: In Kaguya-sama: Love is War, what is the full name of the boy (last name, first name)? (2 words, 9+6 letters)')
+            print('Question 16: In Kaguya-sama: Love is War, what is the full name of the boy (last name, first name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'shirogane miyuki' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 16: In Kaguya-sama: Love is War, what is the full name of the boy (last name, first name)? (2 words, 9+6 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 17: In Welcome to Demon School! Iruma-kun, what is the name of the demon Iruma\'s parents sold him to?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'sullivan':
-            print('Wrong, try again.')
-            print('Question 17: In Welcome to Demon School! Iruma-kun, what is the name of the demon Iruma\'s parents sold him to? (1 word, 8 letters)')
+            print('Question 17: In Welcome to Demon School! Iruma-kun, what is the name of the demon Iruma\'s parents sold him to?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'sullivan' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 17: In Welcome to Demon School! Iruma-kun, what is the name of the demon Iruma\'s parents sold him to? (1 word, 8 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 18: In Jujutsu Kaisen, what is the name of the demon whose fingers are eaten by Itadori Yuji?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'sukuna':
-            print('Wrong, try again.')
-            print('Question 18: In Jujutsu Kaisen, what is the name of the demon whose fingers are eaten by Itadori Yuji? (1 word, 6 letters)')
-            answer: input('Your answer: ')
-        else:
-            print('Correct! Next question:')
-            points += 1
-        print('Question 19: In Nanatsu no Taizai (The Seven Deadly Sins), what is Ban\'s sin and animal?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'greed and fox':
-            print('Wrong, try again.')
-            print('Question 19: In Nanatsu no Taizai (The Seven Deadly Sins), what is Ban\'s sin and animal? (3 words, 5+\'and\'+3 letters)')
+            print('Question 18: In Jujutsu Kaisen, what is the name of the demon whose fingers are eaten by Itadori Yuji?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'sukuna' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 18: In Jujutsu Kaisen, what is the name of the demon whose fingers are eaten by Itadori Yuji? (1 word, 6 letters)')
+                    answer: input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 20: What is the name of the most famous opening music of Naruto (in english)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'blue bird':
-            print('Wrong, try again.')
-            print('Question 20: What is the name of the most famous opening music of Naruto (in english)? (2 words, 4+4 letters)')
+            print('Question 19: In Nanatsu no Taizai (The Seven Deadly Sins), what is Ban\'s sin and animal?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'greed and fox' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 19: In Nanatsu no Taizai (The Seven Deadly Sins), what is Ban\'s sin and animal? (3 words, 5+\'and\'+3 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 21: In Boku no Hero Academia, what is Eraser Head\'s full name (last name, full name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'aizawa shota':
-            print('Wrong, try again.')
-            print('Question 21: In Boku no Hero Academia, what is Eraser Head\'s full name (last name, full name)? (2 words, 6+5 letters)')
+            print('Question 20: What is the name of the most famous opening music of Naruto (in english)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'blue bird' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 20: What is the name of the most famous opening music of Naruto (in english)? (2 words, 4+4 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 22: What is the name of the main song in the anime Given? answer in japanese, in romaji (english alphabet).')
-        answer = input('Your answer: ')
-        while answer.lower() != 'fuyu no hanashi':
-            print('Wrong, try again.')
-            print('Question 22: What is the name of the main song in the anime Given? answer in japanese, in romaji (english alphabet). (3 words, 4+2+7 letters)')
+            print('Question 21: In Boku no Hero Academia, what is Eraser Head\'s full name (last name, full name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'aizawa shota' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 21: In Boku no Hero Academia, what is Eraser Head\'s full name (last name, full name)? (2 words, 6+5 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 23: In No Game, No Life, what is the name of the God that takes the pro-gamer siblings to another world?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'tet':
-            print('Wrong, try again.')
-            print('Question 23: In No Game, No Life, what is the name of the God that takes the pro-gamer siblings to another world? (1 word, 3 letters)')
+            print('Question 22: What is the name of the main song in the anime Given? answer in japanese, in romaji (english alphabet).')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'fuyu no hanashi' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 22: What is the name of the main song in the anime Given? answer in japanese, in romaji (english alphabet). (3 words, 4+2+7 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 24: In Naruto, what is the nickname given to Jiraya by Naruto? answer in japanese, in romaji (english alphabet).')
-        answer = input('Your answer: ')
-        while answer.lower() != 'ero-sennin':
-            print('Wrong, try again.')
-            print('Question 24: In Naruto, what is the nickname given to Jiraya by Naruto? answer in japanese, in romaji (english alphabet). (2 words, 3+\'-\'+6 letters)')
+            print('Question 23: In No Game, No Life, what is the name of the God that takes the pro-gamer siblings to another world?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'tet' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 23: In No Game, No Life, what is the name of the God that takes the pro-gamer siblings to another world? (1 word, 3 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 25: In Kakegurui, how many millions of yens (¥) does Jabami Yumeko owes at the debt settlement party?')
-        answer = input('Your answer: ')
-        while answer != '310':
-            print('Wrong, try again.')
-            print('Question 25: In Kakegurui, how many millions of yens (¥) does Jabami Yumeko owes at the debt settlement party? (3 digits)')
+            print('Question 24: In Naruto, what is the nickname given to Jiraya by Naruto? answer in japanese, in romaji (english alphabet).')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'ero-sennin' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 24: In Naruto, what is the nickname given to Jiraya by Naruto? answer in japanese, in romaji (english alphabet). (2 words, 3+\'-\'+6 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 26: In Kakegurui, who was the first to play against Jabami Yumeko, in episode 1 (last name, first name)?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'saotome meari' and answer.lower() != 'saotome mary':
-            print('Wrong, try again.')
-            print('Question 26: In Kakegurui, who was the first to play against Jabami Yumeko, in episode 1 (last name, first name)? (2 words, 7+4 letters in english and 7+5 letters in japanese, romaji)')
+            print('Question 25: In Kakegurui, how many millions of yens (¥) does Jabami Yumeko owes at the debt settlement party?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer != '310' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 25: In Kakegurui, how many millions of yens (¥) does Jabami Yumeko owes at the debt settlement party? (3 digits)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 27: In The Hidden Dungeon Only I Can Enter, what is the passphrase to open the hidden dungeon\'s door?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'hidden dungeon only i can enter, let me train in secret to become the strongest in the world':
-            print('Wrong, try again.')
-            print('Question 27: In The Hidden Dungeon Only I Can Enter, what is the passphrase to open the hidden dungeon\'s door? (18 words, 6+7+4+1+3+5+\',\'+3+2+5+2+6+2+6+3+9+2+3+5 letters)')
+            print('Question 26: In Kakegurui, who was the first to play against Jabami Yumeko, in episode 1 (last name, first name)?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'saotome meari' and answer.lower() != 'saotome mary' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 26: In Kakegurui, who was the first to play against Jabami Yumeko, in episode 1 (last name, first name)? (2 words, 7+4 letters in english and 7+5 letters in japanese, romaji)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 28: In Assassination Classroom, what is the name given to the alien teacher by the students?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'koro-sensei':
-            print('Wrong, try again.')
-            print('Question 28: In Assassination Classroom, what is the name given to the alien teacher by the students? (2 words, 4+\'=\'+6 letters)')
+            print('Question 27: In The Hidden Dungeon Only I Can Enter, what is the passphrase to open the hidden dungeon\'s door?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'hidden dungeon only i can enter, let me train in secret to become the strongest in the world' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 27: In The Hidden Dungeon Only I Can Enter, what is the passphrase to open the hidden dungeon\'s door? (18 words, 6+7+4+1+3+5+\',\'+3+2+5+2+6+2+6+3+9+2+3+5 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 29: In Fairy Tail, what\'s Natsu\'s last name?')
-        answer = input('Your answer: ')
-        while answer.lower() != 'dragneel':
-            print('Wrong, try again.')
-            print('Question 29: In Fairy Tail, what\'s Natsu\'s last name? (1 word, 8 letters)')
+            print('Question 28: In Assassination Classroom, what is the name given to the alien teacher by the students?')
             answer = input('Your answer: ')
-        else:
-            print('Correct! Next question:')
+            while answer.lower() != 'koro-sensei' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 28: In Assassination Classroom, what is the name given to the alien teacher by the students? (2 words, 4+\'=\'+6 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print('Question 30: In B: The Beginning, what does the simbol of the B killer actually means?')
-        answer = input('Your answer: ')
-        while answer.lower() != '13 and 4':
-            print('Wrong, try again.')
-            print('Question 30: In B: The Beginning, what does the simbol of the B killer actually means? (2 digits + \'and\' + 1 digit)')
+            print('Question 29: In Fairy Tail, what\'s Natsu\'s last name?')
             answer = input('Your answer: ')
-        else:
-            print('Correct!')
+            while answer.lower() != 'dragneel' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 29: In Fairy Tail, what\'s Natsu\'s last name? (1 word, 8 letters)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            print('Next question:')
             points += 1
-        print(f'Congratulations, you got {points}/30 points!')
-        print('Now, there are some extra questions.')
-        y = input('Do you want to try the extra questions? (\'y\' or \'n\'): ')
-        if y == 'n':
-            x = 0
-        elif y == 'y':
-            print('Extra Question 1 (lyrics): Complete the lyrics:')
-            print('Tsumetai ______ ga / Sora de itetsuite / Yasashī furi shite / Mai ochiru koroni')
+            print('Question 30: In B: The Beginning, what does the simbol of the B killer actually means?')
             answer = input('Your answer: ')
-            while answer.lower() != 'namida':
-                print('Wrong, try again.')
-                print('Extra Question 1 (lyrics): Complete the lyrics: (1 word, 6 letters)')
+            while answer.lower() != '13 and 4' and answer.lower() != 'skip':
+                if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
+                    print('If you want to try again, type \'play()\'.')
+                    x = 0
+                elif answer.lower() != 'skip':
+                    print('Wrong, try again.')
+                    print('Question 30: In B: The Beginning, what does the simbol of the B killer actually means? (2 digits + \'and\' + 1 digit)')
+                    answer = input('Your answer: ')
+                else:
+                    points -= 1
+            points += 1
+            print(f'Congratulations, you got {points}/30 points!')
+            y = input('Do you want to try some extra questions? (\'y\' or \'n\'): ')
+            if y == 'n':
+                x = 0
+            elif y == 'y':
+                print('Extra Question 1 (lyrics): Complete the lyrics:')
                 print('Tsumetai ______ ga / Sora de itetsuite / Yasashī furi shite / Mai ochiru koroni')
                 answer = input('Your answer: ')
-            else:
+                while answer.lower() != 'namida' and answer.lower() != 'skip':
+                    if answer.lower() == 'gameover':
+                        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                        print('Credits: The whole code was written by Alex Marques.')
+                        print('If you want to try again, type \'play()\'.')
+                        x = 0
+                    elif answer.lower() != 'skip':
+                        print('Wrong, try again.')
+                        print('Extra Question 1 (lyrics): Complete the lyrics: (1 word, 6 letters)')
+                        print('Tsumetai ______ ga / Sora de itetsuite / Yasashī furi shite / Mai ochiru koroni')
+                        answer = input('Your answer: ')
+                    else:
+                        extra -= 1
                 print('Correct!')
                 extra += 1
-            print('Extra Question 2 (YAOI): What is the name of the most popular yaoi ship in Boku no Hero Academia?')
-            answer = input('Your answer: ')
-            while answer.lower() != 'bakudeku':
-                print('Wrong, try again.')
-                print('Extra Question 2 (YAOI): What is the name of the most popular yaoi ship in Boku no Hero Academia? (1 word, 4 letters)')
+                print('Extra Question 2 (YAOI): What is the name of the most popular yaoi ship in Boku no Hero Academia?')
                 answer = input('Your answer: ')
-            else:
+                while answer.lower() != 'bakudeku' and answer.lower() != 'skip':
+                    if answer.lower() == 'gameover':
+                        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                        print('Credits: The whole code was written by Alex Marques.')
+                        print('If you want to try again, type \'play()\'.')
+                        x = 0
+                    elif answer.lower() != 'skip':
+                        print('Wrong, try again.')
+                        print('Extra Question 2 (YAOI): What is the name of the most popular yaoi ship in Boku no Hero Academia? (1 word, 4 letters)')
+                        answer = input('Your answer: ')
+                    else:
+                        extra -= 1
                 print('Correct!')
                 extra += 1
-            print('Extra Question 3 (japanese): What does \'OMEDETOU GOZAIMASU\' mean in japanese?')
-            answer = input('Your answer: ')
-            while answer.lower() != 'congratulations':
-                print ('Wrong, try again.')
-                print('Extra Question 3 (japanese): What does \'OMEDETOU GOZAIMASU\' mean in japanese? (1 word, 15 letters)')
+                print('Extra Question 3 (japanese): What does \'OMEDETOU GOZAIMASU\' mean in japanese?')
                 answer = input('Your answer: ')
-            else:
-                print('Correct!')
+                while answer.lower() != 'congratulations' and answer.lower() != 'skip':
+                    if answer.lower() == 'gameover':
+                        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                        print('Credits: The whole code was written by Alex Marques.')
+                        print('If you want to try again, type \'play()\'.')
+                        x = 0
+                    elif answer.lower() != 'skip':
+                        print ('Wrong, try again.')
+                        print('Extra Question 3 (japanese): What does \'OMEDETOU GOZAIMASU\' mean in japanese? (1 word, 15 letters)')
+                        answer = input('Your answer: ')
+                    else:
+                        extra -= 1
                 print('OMEDETOU GOZAIMASU!')
                 extra += 1
                 x = 0
-    else:
-        print(f'Congratulations {name}, you won {points+extra} out of 33!')
+        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
         print('Credits: The whole code was written by Alex Marques.')
+        a = input('Do you want to play again? Answer with \'y\' or \'n\'.')
+        if a == 'y':
+            play()
+        elif a == 'n':
+            quit()
+    play()
+def name():
+    name = input('Please write your name again: ')
