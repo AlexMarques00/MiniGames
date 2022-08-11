@@ -451,13 +451,8 @@ elif answer == 'y':
                 print('OMEDETOU GOZAIMASU!')
                 extra += 1
                 x = 0
+        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+        print('Credits: The whole code was written by Alex Marques.')
     play()
-print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
-print('Credits: The whole code was written by Alex Marques.')
-a = input('Do you want to play again? Answer with \'y\' or \'n\'.')
-if a == 'y':
-    play()
-elif a == 'n':
-    quit()
 def name():
     name = input('Please write your name again: ')
