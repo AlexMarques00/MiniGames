@@ -36,7 +36,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 2: In Naruto, what is Naruto\'s village\'s name? (1 word, 6 letters)')
@@ -51,7 +51,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 3: Question 3: In Sword Art Online, what is Kirigaya Kazuto\'s girlfriend\'s full name (last name, first name)? (2 words, 5+5 letters)')
@@ -66,7 +66,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 4: In Pokemon, what is Ash\'s first pokemon? (1 word, 6 letters)')
@@ -81,7 +81,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 5: In Kimetsu no Yaiba (Demon Slayer), what is the first breathing technique\'s element that Kamado Tanjirou learns? (1 word, 5 letters)')
@@ -96,7 +96,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 6: In Boku no Hero Academia, what is Deku\'s full name (last name, first name)? (2 words, 8+5 letters)')
@@ -111,7 +111,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 7: In Sword Art Online, in what year does the first arc happen? (4 digits)')
@@ -126,7 +126,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 8: In Naruto, who is the sixth hokage (last name, first name)? (2 words, 6+7 letters)')
@@ -141,7 +141,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 9: In Shokugeki no Souma (Food Wars), what is the main character\'s full name (last name, first name)? (2 words, 8+5 letters)')
@@ -156,7 +156,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 10: In Ao no Exorcist (Blue Exorcist), what is the demon kid\'s full name (last name, first name)? (2 words, 7+3 letters)')
@@ -171,7 +171,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 11: In The Irregular at Magic High School, what is the name of the famous CAD inventor? (2 word, 6+6 letters)')
@@ -186,7 +186,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 12: In Naruto, what is the name of the Uchiha\'s eye jutsu after the person kills their closest friend? (2 words, 9+9 letters)')
@@ -201,7 +201,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 13: In Boku no Hero Academia, what is Bakugou\'s first try for a hero name? (3 words, 4+9+6 letters)')
@@ -216,7 +216,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 14: In Shokugeki no Souma (Food Wars), what was Souma\'s father\'s full name before he got married (last name, first name)? (2 words, 5+10 letters)')
@@ -231,7 +231,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 15: In Death Note, what is the name of the Shinigami that follows Yagami Light around? (1 word, 4 letters)')
@@ -246,7 +246,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 16: In Kaguya-sama: Love is War, what is the full name of the boy (last name, first name)? (2 words, 9+6 letters)')
@@ -261,7 +261,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 17: In Welcome to Demon School! Iruma-kun, what is the name of the demon Iruma\'s parents sold him to? (1 word, 8 letters)')
@@ -276,7 +276,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 18: In Jujutsu Kaisen, what is the name of the demon whose fingers are eaten by Itadori Yuji? (1 word, 6 letters)')
@@ -291,7 +291,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
                     print('Question 19: In Nanatsu no Taizai (The Seven Deadly Sins), what is Ban\'s sin and animal? (3 words, 5+\'and\'+3 letters)')
