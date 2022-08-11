@@ -19,6 +19,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'kirito' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.\nTip: Don\'t press space unless needed.')
@@ -32,6 +34,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'konoha' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -45,6 +49,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'yuuki asuna' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -58,6 +64,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'pikachu' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -71,6 +79,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'water' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -84,6 +94,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'midoriya izuku' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -97,6 +109,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer != '2022' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -110,6 +124,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'hatake kakashi' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -123,6 +139,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'yukihira souma' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -136,6 +154,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'okumura rin' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -149,6 +169,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'taurus silver' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -162,6 +184,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'mangekyou sharingan' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -175,6 +199,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'king explosion murder' and answer.lower() != 'king explosion murderer' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -188,6 +214,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'saiba jouichirou' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -201,6 +229,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'ryuk' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -214,6 +244,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'shirogane miyuki' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -227,6 +259,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'sullivan' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -240,6 +274,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'sukuna' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -253,6 +289,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'greed and fox' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -266,6 +304,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'blue bird' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -279,6 +319,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'aizawa shota' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -292,6 +334,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'fuyu no hanashi' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -305,6 +349,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'tet' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -318,6 +364,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'ero-sennin' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -331,6 +379,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer != '310' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -344,6 +394,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'saotome meari' and answer.lower() != 'saotome mary' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -357,6 +409,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'hidden dungeon only i can enter, let me train in secret to become the strongest in the world' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -370,6 +424,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'koro-sensei' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -383,6 +439,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != 'dragneel' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -396,6 +454,8 @@ elif answer == 'y':
             answer = input('Your answer: ')
             while answer.lower() != '13 and 4' and answer.lower() != 'skip':
                 if answer.lower() == 'gameover':
+                    print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                    print('Credits: The whole code was written by Alex Marques.')
                     x = 0
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.')
@@ -414,6 +474,8 @@ elif answer == 'y':
                 answer = input('Your answer: ')
                 while answer.lower() != 'namida' and answer.lower() != 'skip':
                     if answer.lower() == 'gameover':
+                        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                        print('Credits: The whole code was written by Alex Marques.')
                         x = 0
                     elif answer.lower() != 'skip':
                         print('Wrong, try again.')
@@ -428,6 +490,8 @@ elif answer == 'y':
                 answer = input('Your answer: ')
                 while answer.lower() != 'bakudeku' and answer.lower() != 'skip':
                     if answer.lower() == 'gameover':
+                        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                        print('Credits: The whole code was written by Alex Marques.')
                         x = 0
                     elif answer.lower() != 'skip':
                         print('Wrong, try again.')
@@ -441,6 +505,8 @@ elif answer == 'y':
                 answer = input('Your answer: ')
                 while answer.lower() != 'congratulations' and answer.lower() != 'skip':
                     if answer.lower() == 'gameover':
+                        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
+                        print('Credits: The whole code was written by Alex Marques.')
                         x = 0
                     elif answer.lower() != 'skip':
                         print ('Wrong, try again.')
@@ -451,8 +517,6 @@ elif answer == 'y':
                 print('OMEDETOU GOZAIMASU!')
                 extra += 1
                 x = 0
-        print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
-        print('Credits: The whole code was written by Alex Marques.')
     play()
 def name():
     name = input('Please write your name again: ')
