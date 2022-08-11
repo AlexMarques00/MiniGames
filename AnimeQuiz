@@ -21,7 +21,7 @@ elif answer == 'y':
                 if answer.lower() == 'gameover':
                     print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
                     print('Credits: The whole code was written by Alex Marques.')
-                    x = 0
+                    quit()
                 elif answer.lower() != 'skip':
                     print('Wrong, try again.\nTip: Don\'t press space unless needed.')
                     print('Question 1: In Sword Art Online, what is Kirigaya Kazuto\'s username? (1 word, 6 letters)')
