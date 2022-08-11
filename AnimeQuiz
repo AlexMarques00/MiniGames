@@ -453,6 +453,7 @@ elif answer == 'y':
                 x = 0
         print(f'Congratulations {name}, you won {points} out of 30 points plus {extra} out of 3 from the extra questions!')
         print('Credits: The whole code was written by Alex Marques.')
+        x = 1
         a = input('Do you want to play again? Answer with \'y\' or \'n\'.')
         if a == 'y':
             play()
