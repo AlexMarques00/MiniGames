@@ -60,7 +60,7 @@ public class Quiz
         string a1 = "kirito";
         string d1 = "1 word, 6 letters";
 
-        string q2 = "Question 2: In Naruto, what is Naruto's village's name?";
+        string q2 = "Question 2: In Naruto, what is Naruto's village's name (in japanese)?";
         string a2 = "konoha";
         string d2 = "1 word, 6 letters";
 
@@ -160,7 +160,7 @@ public class Quiz
         string a26 = "saotome mary";
         string d26 = "2 words, 7+4 letters";
 
-        string q27 = "Question 27: In The Hidden Dungeon Only I Can Enter, what is the passphrase to open the hidden dungeon's door?";
+        string q27 = "Question 27: In The Hidden Dungeon Only I Can Enter, what is the passphrase to open the hidden dungeon's door? (in english)";
         string a27 = "hidden dungeon only i can enter, let me train in secret to become the strongest in the world";
         string d27 = "18 words, 6 + 7 + 4 + 1 + 3 + 5 + ', ' + 3 + 2 + 5 + 2 + 6 + 2 + 6 + 3 + 9 + 2 + 3 + 5 letters";
 
@@ -289,14 +289,28 @@ public class Quiz
             Console.WriteLine("Correct! Next Question");
             num += 1;
             points += 1;
-            Questions();
-            return;
+            if(num <= 30)
+            {
+                Questions();
+                return;
+            }
+            else if(num > 30)
+            {
+                Extra();
+            }
         }
         else if (answer == "skip")
         {
             num += 1;
-            Questions();
-            return;
+            if (num <= 30)
+            {
+                Questions();
+                return;
+            }
+            else if (num > 30)
+            {
+                Extra();
+            }
         }
         else if (answer == "gameover")
         {
@@ -307,6 +321,107 @@ public class Quiz
             Console.WriteLine("Wrong answer. Try Again.");
             Console.WriteLine("Tip: " + d);
             Questions();
+            return;
+        }
+    }
+    public static void ExtraQuestions()
+    {
+
+        string q31 = "Extra Question 1 (lyrics): Complete the lyrics: \n Tsumetai ______ ga / Sora de itetsuite / Yasashī furi shite / Mai ochiru koroni";
+        string a31 = "namida";
+        string d31 = "1 word, 6 letters";
+
+        string q32 = "Extra Question 2 (YAOI): What is the name of the most popular yaoi ship in Boku no Hero Academia?";
+        string a32 = "bakudeku";
+        string d32 = "1 word, 4 letters";
+
+        string q33 = "Extra Question 3 (japanese): What does 'OMEDETOU GOZAIMASU' mean in japanese?";
+        string a33 = "congratulations";
+        string d33 = "1 word, 15 letters";
+
+        Dictionary<int, string> questions2 = new Dictionary<int, string>()
+        {
+            {31,q31},
+            {32,q32},
+            {33,q33}
+        };
+
+        Dictionary<int, string> answer2 = new Dictionary<int, string>()
+        {
+            {31,a31},
+            {32,a32},
+            {33,a33}
+        };
+
+        Dictionary<int, string> tips2 = new Dictionary<int, string>()
+        {
+            {31,d31},
+            {32,d32},
+            {33,d33}
+        };
+
+        q = questions2[num];
+        a = answer2[num];
+        d = tips2[num];
+
+        Console.WriteLine(q);
+        answer = (Console.ReadLine()).ToLower();
+        if (answer == a)
+        {
+            Console.WriteLine("Correct! Next Question:");
+            num += 1;
+            points += 2;
+            if (num <= 33)
+            {
+                ExtraQuestions();
+                return;
+            }
+            else if (num > 33)
+            {
+                ExtraResults();
+            }
+        }
+        else if (answer == "skip")
+        {
+            num += 1;
+            if (num <= 33)
+            {
+                ExtraQuestions();
+                return;
+            }
+            else if (num > 33)
+            {
+                ExtraResults();
+            }
+        }
+        else if (answer == "gameover")
+        {
+            ExtraResults();
+        }
+        else if (answer != a && answer != "skip" && answer != "gameover")
+        {
+            Console.WriteLine("Wrong answer. Try Again.");
+            Console.WriteLine("Tip: " + d);
+            ExtraQuestions();
+            return;
+        }
+    }
+    public static void Extra()
+    {
+        Console.WriteLine("Do you want to play 3 extra questions, worth 2 points each, about stuff related to anime, like japanese music, yaoi ships and japanese? (Y/N)");
+        yn = (Console.ReadLine()).ToLower();
+        if (yn == "y")
+        {
+            ExtraQuestions();
+        }
+        else if (yn == "n")
+        {
+            Results();
+        }
+        else
+        {
+            Console.WriteLine("Invalid answer.");
+            Extra();
             return;
         }
     }
@@ -330,6 +445,29 @@ public class Quiz
         {
             Console.WriteLine("Invalid answer.");
             Results();
+            return;
+        }
+    }
+    public static void ExtraResults()
+    {
+        Console.WriteLine("You got " + points + " points out of 36! Congratulations " + name + "!");
+        Console.WriteLine("Credits to the author: AlexMarques.");
+        Console.WriteLine("Do you want to play again? (Y/N)");
+        yn = (Console.ReadLine()).ToLower();
+        if (yn == "y")
+        {
+            Rules();
+        }
+        else if (yn == "n")
+        {
+            Console.WriteLine("Goodbye, " + name + ".");
+            Console.WriteLine("Please take this quiz to someone who'll want to play it.");
+            Main();
+        }
+        else
+        {
+            Console.WriteLine("Invalid answer.");
+            ExtraResults();
             return;
         }
     }
