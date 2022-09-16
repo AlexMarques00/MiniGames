@@ -176,107 +176,9 @@ public class Quiz
         string a30 = "13 and 4";
         string d30 = "2 digits + ' and ' + 1 digit";
 
-        Dictionary<int, string> questions1 = new Dictionary<int, string>()
-        {
-            {1,q1},
-            {2,q2},
-            {3,q3},
-            {4,q4},
-            {5,q5},
-            {6,q6},
-            {7,q7},
-            {8,q8},
-            {9,q9},
-            {10,q10},
-            {11,q11},
-            {12,q12},
-            {13,q13},
-            {14,q14},
-            {15,q15},
-            {16,q16},
-            {17,q17},
-            {18,q18},
-            {19,q19},
-            {20,q20},
-            {21,q21},
-            {22,q22},
-            {23,q23},
-            {24,q24},
-            {25,q25},
-            {26,q26},
-            {27,q27},
-            {28,q28},
-            {29,q29},
-            {30,q30}
-        };
-
-        Dictionary<int, string> answer1 = new Dictionary<int, string>()
-        {
-            {1,a1},
-            {2,a2},
-            {3,a3},
-            {4,a4},
-            {5,a5},
-            {6,a6},
-            {7,a7},
-            {8,a8},
-            {9,a9},
-            {10,a10},
-            {11,a11},
-            {12,a12},
-            {13,a13},
-            {14,a14},
-            {15,a15},
-            {16,a16},
-            {17,a17},
-            {18,a18},
-            {19,a19},
-            {20,a20},
-            {21,a21},
-            {22,a22},
-            {23,a23},
-            {24,a24},
-            {25,a25},
-            {26,a26},
-            {27,a27},
-            {28,a28},
-            {29,a29},
-            {30,a30}
-        };
-
-        Dictionary<int, string> tips1 = new Dictionary<int, string>()
-        {
-            {1,d1},
-            {2,d2},
-            {3,d3},
-            {4,d4},
-            {5,d5},
-            {6,d6},
-            {7,d7},
-            {8,d8},
-            {9,d9},
-            {10,d10},
-            {11,d11},
-            {12,d12},
-            {13,d13},
-            {14,d14},
-            {15,d15},
-            {16,d16},
-            {17,d17},
-            {18,d18},
-            {19,d19},
-            {20,d20},
-            {21,d21},
-            {22,d22},
-            {23,d23},
-            {24,d24},
-            {25,d25},
-            {26,d26},
-            {27,d27},
-            {28,d28},
-            {29,d29},
-            {30,d30}
-        };
+        string[] questions1 = new string[] { "error", q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22, q23, q24, q25, q26, q27, q28, q29, q30 };
+        string[] answer1 = new string[] {"error", a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28, a29, a30};
+        string[] tips1 = new string[] {"error", d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30};
 
         q = questions1[num];
         a = answer1[num];
@@ -339,26 +241,9 @@ public class Quiz
         string a33 = "congratulations";
         string d33 = "1 word, 15 letters";
 
-        Dictionary<int, string> questions2 = new Dictionary<int, string>()
-        {
-            {31,q31},
-            {32,q32},
-            {33,q33}
-        };
-
-        Dictionary<int, string> answer2 = new Dictionary<int, string>()
-        {
-            {31,a31},
-            {32,a32},
-            {33,a33}
-        };
-
-        Dictionary<int, string> tips2 = new Dictionary<int, string>()
-        {
-            {31,d31},
-            {32,d32},
-            {33,d33}
-        };
+        string[] questions2 = new string[] {"error", q31, q32, q33 };
+        string[] answer2 = new string[] {"error", a31, a32, a33 };
+        string[] tips2 = new string[] {"error", d31, d32, d33 };
 
         q = questions2[num];
         a = answer2[num];
