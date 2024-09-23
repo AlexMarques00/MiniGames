@@ -8,13 +8,13 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Quiz
 {
-    static string name = "If this is showing in your gameplay, something went wrong in the code. Please contact the creator, AlexMarques. Email: alex@recriarsistemas.com.br";
-    static string answer = "If this is showing in your gameplay, something went wrong in the code. Please contact the creator, AlexMarques. Email: alex@recriarsistemas.com.br";
-    static string yn = "If this is showing in your gameplay, something went wrong in the code. Please contact the creator, AlexMarques. Email: alex@recriarsistemas.com.br";
+    static string name;
+    static string answer;
+    static string yn;
     static int num;
-    static string q = "If this is showing in your gameplay, something went wrong in the code. Please contact the creator, AlexMarques. Email: alex@recriarsistemas.com.br";
-    static string a = "If this is showing in your gameplay, something went wrong in the code. Please contact the creator, AlexMarques. Email: alex@recriarsistemas.com.br";
-    static string d = "If this is showing in your gameplay, something went wrong in the code. Please contact the creator, AlexMarques. Email: alex@recriarsistemas.com.br";
+    static string q;
+    static string a;
+    static string d;
     static int points;
     public static void Main()
     {
