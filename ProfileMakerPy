@@ -27,24 +27,6 @@ elif month.lower() == 'november':
     month = 11
 elif month.lower() == 'december':
     month = 12
-if 4 < month:
-    myage = year - 2003
-elif 4 > month:
-    myage = year - 2003 - 1
-elif 4 == month:
-    if 22 < day:
-        myage = year - 2003
-    elif 22 > day:
-        myage = year - 2003 - 1
-    elif 22 == day:
-        myage = year - 2003
-        print(f'Happy birthday to me!')
-print(f'''My Profile (author):
-My name is Alex Marques. I am demiboy.
-Please call me by he/him. I like men.
-I was born on 4/22/2003, therefor I am {myage} years old.
-I like anime, TV series, horror movies, games, python, marcial arts, shopping, chocolate and animals.
-I have a dog named Max.''')
 run = 'y'
 while run == 'y':
     firstname = input('Your first name: ')
